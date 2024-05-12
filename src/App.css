@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(48, 43, 97);
+  color: white
 }
 
 .App-logo {
@@ -26,6 +34,18 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.cashiers {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px
+}
+
+.cashierLine {
+  width: 50px;
+  border: 1px dashed wheat;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
